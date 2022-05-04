@@ -2,6 +2,7 @@
 
 # Portfolio template for developers and designers 
 This is a portfilio template made using Lume, as static site generator running in Deno. 
+![Portfolio Design preview](https://i.imgur.com/3vAFstB.gif)
 
 ## Installation 
 to start editing the template, you first need to install Deno for the official [Deno website](https://deno.land/).
