@@ -10,7 +10,6 @@ const site = lume({
 })
 site.copy('static')
 site.use(jsx())
-site.use(pug())
 site.use(relative_urls())
 site.use(sass({ extensions: ['.scss'] }))
 site.use(terser())
