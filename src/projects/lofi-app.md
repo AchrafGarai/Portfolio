@@ -5,7 +5,7 @@ img: /static/work/LofiApp.jpg
 description: Lo-Fi App is a full-stack demo project showing how to use NextJs, TailwindCSS, Prisma, Apollo Server and GraphQL to build a music application.
 ---
 
-# About Lo-Fi App M 🎧
+# About Lo-Fi App
 
 Lo-Fi App is a full-stack demo project showing how to use NextJs, TailwindCSS, Prisma, Apollo Server and GraphQL to build a music application.
 
