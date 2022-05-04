@@ -2,6 +2,10 @@ $body: #fff;
 $text-prismary: #e4e4e4;
 $border: #141414;
 $overlay:rgba(0, 0, 0, 0.8);
+/* BREAKPOINTS */
+
+$breakpoint-tablet: 768px;
+
 $highlighted: linear-gradient(
   100.43deg,
   #afe8c3 0%,
@@ -18,6 +22,9 @@ body {
   color: $text-prismary;
   background-color: black;
   padding-top: 6rem;
+  @media (max-width: $breakpoint-tablet) {
+  padding-top: 3rem;
+  }
 }
 h1,
 h2,
@@ -46,6 +53,4 @@ a {
   color: $body;
 }
 
-/* BREAKPOINTS */
 
-$breakpoint-tablet: 768px;
