@@ -1,4 +1,4 @@
-import lume from 'https://deno.land/x/lume@v1.7.4/mod.ts'
+import lume from '/lume/mod.ts'
 import sass from '/lume/plugins/sass.ts'
 import terser from '/lume/plugins/terser.ts'
 import relative_urls from '/lume/plugins/relative_urls.ts'

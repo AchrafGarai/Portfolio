@@ -1,15 +1,12 @@
-name: Publish on Deno Deploy
+name: Publish on GitHub Pages
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      id-token: write
-      contents: read
 
     steps:
       - name: Clone repository
@@ -24,8 +21,9 @@ jobs:
         run: |
           deno run -A https://deno.land/x/lume/ci.ts
 
-      - name: Deploy to Deno Deploy
-        uses: denoland/deployctl@v1
+      - name: Deploy
+        uses: crazy-max/ghaction-github-pages@v2.0.1
         with:
-          project: project-name
-          entrypoint: server.ts
+          build_dir: _site
+        env:
+          GITHUB_TOKEN: ${{ github.token }} 
