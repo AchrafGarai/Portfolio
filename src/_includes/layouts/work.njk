@@ -1,0 +1,9 @@
+---
+layout: layouts/base.njk
+---
+
+<section>
+  {% for project in search.pages("project") %}
+    {{ comp.PostCard({ img: project.data.img , title: project.data.title, url:project.data.url , description:project.data.description  }) | safe }}
+  {% endfor %}
+</section>

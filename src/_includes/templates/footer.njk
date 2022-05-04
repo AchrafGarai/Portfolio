@@ -1,0 +1,19 @@
+<div class="footer">
+   <div class="container-lg grid grid-col-2">
+      <h1>Let's talk.</h1>
+
+      <ul class="w-full">
+         {% for link in site.links %}
+         <li class="text-lg p-2 footer-link">
+               <a href="{{ link.url}}"> {{ link.title }} </a>
+         </li>
+         {% endfor %}
+      </ul>
+      
+   </div>
+   <div class="sep"/>
+   <div class="flex justify-between">
+      <p>©{{site.name}}</p>
+      <p><a href="mailto: {{ site.email }} ">{{ site.email }}</a></p>
+   </div>
+</div>

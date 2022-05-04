@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+ <link rel="stylesheet" href="/styles.css">
+
+</head>
+<body>
+{% include "templates/navigation.njk" %}
+  {{ content | safe }}
+{% include "templates/footer.njk" %}
+</body>
+</html>

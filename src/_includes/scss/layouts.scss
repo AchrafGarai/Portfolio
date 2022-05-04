@@ -1,0 +1,77 @@
+.container {
+  margin: 2rem auto 4rem auto;
+  max-width: 47.5rem;
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+.container-lg {
+  margin: 2rem auto 4rem auto;
+  max-width: 80rem;
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.h-100vh {
+  height: 100vh;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.grid{
+  display: grid;
+  gap: 2rem;
+  grid-auto-rows: 1fr; 
+  align-items: center; 
+
+  @media (max-width: $breakpoint-tablet) {
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
+
+.grid-col-2{
+    grid-template-columns: 1fr 1fr; 
+}
+.sep {
+  margin: 2rem 0 2rem 0;
+  height: 1px;
+  width: 100%;
+  background-color: $border;
+}
+
+.hero-section {
+  height: 75vh;
+  padding-top: 5rem;
+}
+
+.hero-bg{
+  background-image: url('../../static/Hero_bg.svg');
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.p-2{
+  padding: 2rem;
+}

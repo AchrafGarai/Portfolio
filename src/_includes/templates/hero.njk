@@ -1,0 +1,18 @@
+
+<div class="container">
+    <div class='flex flex-col justify-between hero-section'>
+        <div class="max-w-40">
+        <h1 class="centered">Meet your next </br> <span class="text-hl">creative</span> developer.</h1>
+        <p class="centered">My name is Achraf, I am product designer and developer and I love building apps and websites. I've helped many startups create amazing digital experiences for their users.
+        </p>
+        <div>
+            {{ content | safe }}
+        </div>
+        </div>
+        <div class="flex flex-col w-full">
+            {% include "templates/icons/BottomArrow.njk" %}
+            <div class="sep"></div>
+        </div>
+
+    </div>
+</div>

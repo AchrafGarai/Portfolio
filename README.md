@@ -1,2 +1,2 @@
-# Portfolio
- Portfolio using lume
+# Personal-Portfolio
+ My personal portfolio made using Lume

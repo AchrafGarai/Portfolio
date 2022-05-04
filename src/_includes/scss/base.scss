@@ -1,0 +1,51 @@
+$body: #fff;
+$text-prismary: #e4e4e4;
+$border: #141414;
+$overlay:rgba(0, 0, 0, 0.8);
+$highlighted: linear-gradient(
+  100.43deg,
+  #afe8c3 0%,
+  #67c4ca 30.32%,
+  #9c92a3 71.47%,
+  #68bbe2 101.52%
+);
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: $text-prismary;
+  background-color: black;
+  padding-top: 6rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Change heading typefaces here */
+  color: $body;
+  letter-spacing: -0.05em;
+}
+a {
+  text-decoration: underline;
+}
+
+/* Buttons styles start */
+.button {
+  margin: 2rem 0 2rem 0;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 4rem;
+  border: 0.125rem solid $body;
+  cursor: pointer;
+  transition: all ease-out 100ms;
+}
+.button:hover {
+  color: $body;
+}
+
+/* BREAKPOINTS */
+
+$breakpoint-tablet: 768px;
