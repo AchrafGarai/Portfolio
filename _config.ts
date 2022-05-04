@@ -6,6 +6,7 @@ import postcss from 'https://deno.land/x/lume@v1.7.4/plugins/postcss.ts'
 
 const site = lume({
   src: './src',
+   location: new URL("https://achrafgarai.github.io/Portfolio/"),
 })
 site.copy('static')
 site.use(relative_urls())
